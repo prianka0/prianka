@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+      <head>
+	       <title>My Page</title>
+
+
+
+
+
+
+
+		  
+		   
+	  </head>
+	  
+  <body style="background-color:rgba(255, 99, 71, 0.5)">
+	     <center>
+              	<h style="font-size:50px">JS Form</h>
+        
+        <br>
+		<br>
+		 <br>
+		<br>
+		
+		<div style="border: 5px solid rgb(255, 99, 71);width: 600px;background-color:#FFE4C4">
+		<br>
+			 <form name="js">
+			     
+	                 <div>				
+					 <input type="text" name="fname" id="fname" style="height:25px; width:150px; font-size:20px;" placeholder="First Name">
+					 				
+					 <input type="text" name="lname" id="lname" style="height:25px; width:150px; font-size:20px;" placeholder="Last Name">
+					 </div>
+					 <br>
+					 
+					 <div>				
+					 <input type="text" name="uname" id="uname" style="height:25px; width:300px; font-size:20px;" placeholder="Enter Your Username">
+					 </div>
+					 <br>
+					 
+					 <div>				
+					 <input type="password" name="pass" id="pass" style="height:25px; width:300px; font-size:20px;" placeholder="Enter Your password">
+					 </div>
+					 <br>
+					 
+				<div>
+					 
+					 <select name="gen" id="gen" style="height:25px; width:300px; font-size:20px;">
+					     <option  selected value>Select Your Gender</option>
+						 <option value="Male">Male</option>
+						 <option value="Female">Female</option>
+						 
+					</select>
+					 </div>
+					 
+					 <br>
+					 
+					  <div>					 
+					  <input type="email" name="email" id="email" style="height:25px; width:300px; font-size:20px;" placeholder="Enter Email Address">					
+					  </div>
+					  
+					   <br>
+					   
+					   <div>
+					 
+					 <select name="country" id="country" style="height:25px; width:300px; font-size:20px;">
+					     <option  selected value>Select Your Country</option>
+						 <option value="America">America</option>
+						 <option value="Bangladesh">Bangladesh</option>
+						  <option value="India">India</option>
+						   <option value="Japan">Japan</option>
+						    <option value="United States">United States</option>
+						 
+					</select>
+					 </div>
+					 
+					 <br>
+					   
+					 <div>					 
+					  <input type="tel" name="mobile" id="mobile" style="height:25px; width:300px; font-size:20px;" placeholder="Enter Mobile Number">					
+					  </div>
+					 
+					 <br>
+					 
+					 
+					 <div>
+					
+					 <input type="button"  style="height:35px; width:150px; font-size:25px; color:red" value="Submit" onclick="fun();">
+					 	
+					 </div>
+					 <br>
+		
+          </center>
+		  
+		  <script type="text/javascript">
+		  
+		  	function fun()
+					 {
+					   var fname = document.getElementById('fname').value;
+					  var lname = document.getElementById('lname').value;
+					   var uname = document.getElementById('uname').value;
+					   var pass = document.getElementById('pass').value;
+					   var gen = document.getElementById('gen').value;
+					   var email = document.getElementById('email').value;
+					   var country = document.getElementById('country').value;
+					   var mobile = document.getElementById('mobile').value;
+					   
+					    if (fname == "" )
+						{
+							 alert("Enter Your First Name");
+						}
+						if (lname == "" )
+						{
+							 alert("Enter Your last Name");
+						}
+						if (uname == "" )
+						{
+							 alert("Enter Your user Name");
+						}
+						
+						if (pass == "" )
+						{
+							 alert("Enter Your password");
+						}
+						if (gen == "" )
+						{
+							 alert("Select your Gender");
+						}
+						if (email == "" )
+						{
+							 alert("Enter Your Email");
+						}
+						if (country == "" )
+						{
+							 alert("Select Your Country");
+						}
+						if (mobile == "" )
+						{
+							 alert("Enter Mobile Number");
+						}
+						
+						
+						else
+						{
+						    alert("Registration Successful");
+						}
+					 
+					 }
+					 
+				
+					 
+				
+					 
+			</script>
+		  
+		  
+		 </form>	
+
+</div>		 
+	</body>				
+					 
+					 
+</html>
